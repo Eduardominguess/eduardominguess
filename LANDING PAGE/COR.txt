@@ -1,0 +1,7 @@
+#65FFC0 verde
+#642C93  Roxo
+
+
+
+Roxo: #642c93
+Verde: #23b5b5

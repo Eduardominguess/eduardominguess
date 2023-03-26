@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+    <head>
+        <!-- metatags, metadados -> informações sobre a página -->
+        <meta charset="utf-8"> <!-- informa o sistema de caracteres -->
+        <title>Título da página</title>
+        <meta name="description" content="Página de elementos HTML">
+        <link rel="stylesheet" href="style/elementos.css"> <!-- forma externa -->
+        <style>
+            /* selector de elemento com a tag */
+            body{
+
+            }
+            
+            h1{
+                                
+            }
+            
+            /* selector de elemento com id. Tem importancia maxima*/
+            h1#alguma{
+                
+            }
+
+            /* selector de elemento com classe */
+            .modelo{
+
+            }
+            
+            /* selecionar elemento dentro da hierarquia usando espaço */
+            .modelo h1{
+               
+            }
+
+            /* acessando links que estejam dentro de <p> que estejam dentro de <section> */
+            section p a{
+
+            }
+
+            /* acessando <a> e <p> que estejam dentro <section>, separando comn virgula */
+            section a, section p{
+
+            }
+           
+
+            /* selector de elemento com mais de uma classe, para diferenciar */
+            .modelo.destaque a{
+                
+            }
+
+            /* seletor de atributos html */
+            a[target="_blank"]{ /* que seja igual */
+
+            }
+            a[href^="https"]{ /*começa com*/
+
+            }
+            a[href~="https"]{ /* caso contenha */
+                
+            }
+  
+
+
+
+        </style>
+    </head>
+    <body>
+        <!-- conteudo que será visivel para o usuario -->
+        <!-- elementos não semanticos -> sem significado -->
+        <div></div>
+        <span></span>
+
+        <!-- elementos semanticos -> tem significado -->
+        <header>
+            <!-- introdução ou navegação -->
+        </header>
+        <section class="modelo destaque">
+            <nav>
+                <ul>
+                    <li><a href="">Gato</a></li>
+                    <li><a href="">Gato</a></li>
+                    <li><a href="">Gato</a></li>
+                </ul>
+            </nav>
+            <!-- seção de conteudo -->
+            <h1 id="alguma">Título</h1><!-- pode ter somente 1 -->
+            <h2>Subtitulo</h2>
+            <h3>Subtitulo</h3>
+
+            <p>No mundo atual, a valorização de fatores subjetivos desafia a
+                 capacidade de equalização das diversas correntes de pensamento.
+                <a href=""> Para saber mais sobre o mundo atual, clique aqui</a></p>
+
+            <b>Negrito</b>
+            <strong>Negrito -> algo importante</strong>
+            <i>Italico</i>
+            <mark>Destacado</mark>
+            <del>Riscado</del>
+
+        </section>
+
+        <section id="contato" class="modelo">
+            <h2>Subtitulo</h2>
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/04/diferenca-entre-aves-e-passaros.jpg" alt="Descrição desta imagem">
+            <a href="https://uol.com.br" target="_blank">Link para noticia</a>
+            <a href="#alguma">Link para noticia</a>
+            <p>No mundo atual, a valorização de fatores subjetivos desafia a
+                capacidade de equalização das diversas correntes de pensamento.
+               <a href=""> Para saber mais sobre o mundo atual, clique aqui</a></p>
+        </section>
+
+        <section class="modelo">
+            <h2>Subtitulo</h2>
+            <!-- ordenadas -->
+            <ol>
+                <li>Gato</li>
+                <li>Cachorro</li>
+                <li>Cobra</li>
+            </ol>
+
+            <!-- não ordenada -->
+            <ul>
+                <li>Gato</li>
+                <li>Cachorro</li>
+                <li>Cobra</li>
+            </ul>
+
+        </section>
+        <article class="modelo">
+            <h2>Subtitulo</h2>
+            <!-- conteudo contido em si, direciona para outra área -->
+        </article>
+        <nav>
+            <!-- area de navegação (menu) -->
+        </nav>
+        <main>
+            <!-- area de conteudo principal -->
+        </main>
+        <footer>
+            <!-- rodapé -->
+        </footer>
+    </body>
+</html>

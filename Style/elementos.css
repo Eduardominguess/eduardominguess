@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    /* fazer com que os tamanhos (width e height) incluam o configurado no padding (espaçamento interno) */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #292929;
+    font-size: 28px;
+    background-color: red;
+}
+h2{
+    background-color: purple;
+}
+
+p{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.4;
+    
+}
+
+a{
+    text-decoration: none; /* tirar estilizacoes do link*/
+    background-color: red;
+    /* por padrão é display inline*/
+    display:inline-block;
+    width: 100%;
+
+}
+
+section{
+    background-color: #cacaca;
+    height: 400px; /*altura*/
+    width: 100%; /*largura*/
+    max-width: 800px;
+    min-width: 300px;
+    padding: 40px; /* espaçamento interno*/
+    /*margin: 40px 20px; /* espaçamento externo (em cima/baixo, direita/esquerda) */
+    margin-top: 40px;
+}
+
+/*display inline: o elemento ocupa o tamanho que ele precisa somente*/
+/*display block: o elemento ocupa todo a largura disponível na página, mesmo que não preciso*/
+/*display inline-block: igual ao inline, porém, você pode configurar o tamanho*/
+/*display none: tirar a visibilidade do elemento*/
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+    background-color: green;
+}
+
